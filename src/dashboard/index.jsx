@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import AddResumeBtn from "./components/AddResumeBtn";
 
 function Dashboard() {
   // State for sidebar toggle on small screens
@@ -133,33 +134,15 @@ function Dashboard() {
 
         {/* Main Dashboard Content */}
         <div className="flex-grow p-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Card 1 */}
-            <div className="bg-white shadow-lg rounded-lg p-5">
-              <h3 className="text-xl font-semibold mb-4">Card Title 1</h3>
-              <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                vehicula odio nec nisi ullamcorper, nec dapibus lorem bibendum.
-              </p>
-            </div>
+          <div className="pb-5">
+            <h2 className="text-3xl font-bold">My Resume</h2>
+            <p>Start creating AI generated resume for your new job role</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
 
-            {/* Card 2 */}
-            <div className="bg-white shadow-lg rounded-lg p-5">
-              <h3 className="text-xl font-semibold mb-4">Card Title 2</h3>
-              <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                vehicula odio nec nisi ullamcorper, nec dapibus lorem bibendum.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-white shadow-lg rounded-lg p-5">
-              <h3 className="text-xl font-semibold mb-4">Card Title 3</h3>
-              <p className="text-gray-600">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                vehicula odio nec nisi ullamcorper, nec dapibus lorem bibendum.
-              </p>
-            </div>
+            <AddResumeBtn />
+            <AddResumeBtn />
+            <AddResumeBtn />
           </div>
         </div>
       </div>
